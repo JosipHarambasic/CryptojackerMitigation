@@ -1,0 +1,5 @@
+es_sensor
+sshd:
+ssh
+curl
+..pt/venvs/electrosense-s

@@ -1,0 +1,7 @@
+30861 root     es_sensor                  eth0       16.512       0.928 KB/sec
+24553 root     sshd: root@pts/1           eth0        0.184       0.064 KB/sec
+25420 electr.. ssh                        eth0        0.036       0.018 KB/sec
+30086 root     curl                       eth0        0.000       0.000 KB/sec
+23831 root     ./xmrig                    eth0        0.000       0.000 KB/sec
+3744 root      ..pt/venvs/electrosense-s  eth0        0.000       0.000 KB/sec
+? root         unknown TCP

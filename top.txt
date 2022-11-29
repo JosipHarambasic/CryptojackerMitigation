@@ -1,0 +1,31 @@
+top - 14:53:46 up 2 days, 18:38,  1 user,  load average: 7.90, 8.16, 8.32
+Tasks: 115 total,   1 running,  64 sleeping,   0 stopped,   2 zombie
+%Cpu(s): 22.4 us, 25.7 sy,  0.0 ni, 51.6 id,  0.0 wa,  0.0 hi,  0.3 si,  0.0 st
+KiB Mem :   948072 total,   296192 free,   339852 used,   312028 buff/cache
+KiB Swap:        0 total,        0 free,        0 used.   450472 avail Mem
+
+  PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND
+23831 root      20   0  397916 278208   7244 S 217.4 29.3   2541:43 xmrig
+30861 root      20   0   81748   6992   6252 S  91.3  0.7   3789:15 es_sensor
+17065 root      20   0   44104   5880   4936 S  30.4  0.6   0:00.12 perf
+17062 root      20   0   10252   3196   2796 R  13.0  0.3   0:00.09 top
+    9 root      20   0       0      0      0 S   4.3  0.0   5:42.14 ksoftirqd/0
+   14 root      rt   0       0      0      0 S   4.3  0.0   0:29.78 migration/1
+   24 root      rt   0       0      0      0 S   4.3  0.0   0:22.67 migration/3
+
+top - 14:53:49 up 2 days, 18:38,  1 user,  load average: 7.75, 8.12, 8.31
+Tasks: 115 total,   1 running,  64 sleeping,   0 stopped,   2 zombie
+%Cpu(s): 67.7 us, 31.4 sy,  0.0 ni,  0.0 id,  0.0 wa,  0.0 hi,  0.9 si,  0.0 st
+KiB Mem :   948072 total,   295348 free,   340684 used,   312040 buff/cache
+KiB Swap:        0 total,        0 free,        0 used.   449636 avail Mem
+
+  PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND
+23831 root      20   0  397916 278208   7244 S 265.7 29.3   2541:52 xmrig
+30861 root      20   0   81748   6992   6252 S 100.7  0.7   3789:18 es_sensor
+    1 root      20   0   27276   6216   4852 S   1.6  0.7  50:34.93 systemd
+17062 root      20   0   10252   3196   2796 R   1.3  0.3   0:00.13 top
+  111 root      20   0   35092  12288  11848 S   1.0  1.3  30:28.82 systemd-jo+
+17067 root      -2   0       0      0      0 Z   0.7  0.0   0:00.02 mqtt_servi+
+   10 root      20   0       0      0      0 I   0.3  0.0   3:28.58 rcu_sched
+  317 message+  20   0    6596   3576   3060 S   0.3  0.4  15:02.55 dbus-daemon
+ 3744 root      20   0   33408  17484  10544 S   0.3  1.8  21:17.63 python3
