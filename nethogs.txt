@@ -1,6 +1,26 @@
-  30861 root     es_sensor                  eth0       17.034       0.954 KB/sec
-  24553 root     sshd: root@pts/1           eth0        0.187       0.064 KB/sec
-   3744 root     ..pt/venvs/electrosense-s  eth0        0.097       0.050 KB/sec
-      ? root     ..2.168.0.159:40460-194.2              0.000       0.000 KB/sec
-   4322 root     curl                       eth0        0.000       0.000 KB/sec
-      ? root     unknown TCP                            0.000       0.000 KB/sec
+Refreshing:
+es_sensor/30861/0	1.09905e+06	59010
+curl/23497/0	2042	1923
+/opt/venvs/electrosense-sensor-mqtt/bin/python3/3744/0	1986	1016
+./xmrig/23831/0	385	635
+ssh/25420/1001	184	160
+sshd: root@pts/1/14973/0	174	66
+unknown TCP/0/0	0	0
+
+Refreshing:
+es_sensor/30861/0	1.1176e+06	60000
+curl/23497/0	2042	1923
+/opt/venvs/electrosense-sensor-mqtt/bin/python3/3744/0	1986	1016
+./xmrig/23831/0	385	635
+ssh/25420/1001	184	160
+sshd: root@pts/1/14973/0	174	66
+unknown TCP/0/0	0	0
+
+Refreshing:
+es_sensor/30861/0	1.13616e+06	60924
+curl/23497/0	2042	1923
+/opt/venvs/electrosense-sensor-mqtt/bin/python3/3744/0	1986	1016
+./xmrig/23831/0	385	635
+ssh/25420/1001	184	160
+sshd: root@pts/1/14973/0	174	66
+unknown TCP/0/0	0	0
