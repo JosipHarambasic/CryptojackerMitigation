@@ -1,6 +1,8 @@
 nethogs = open("nethogs.txt", "r")
 whitelistFile = open("whitelist.txt", "r")
-runningTasks = open("check.txt", "r")
+
+for i in whitelistFile:
+    whitelistFile = i.split(",")
 
 parsedFile = []
 for i in nethogs:
@@ -39,28 +41,8 @@ for i in parsedFile:
         check += 1
 print(runningT)
 
-
-whitelistTasks = []
 for i in whitelistFile:
-    if i != "?":
-        whitelistTasks.append(i.strip())
-
-output = []
-for i in runningTasks:
-    var = (" ".join(i.split()).split(" "))
-    if var[0] != "?":
-        value = " ".join(i.split()).split(" ")
-        output.append(value)
-
-checkedTasks = []
-for i in output:
-    checkedTasks.append(i[2])
-
-unknownTasks = list(set(checkedTasks)-set(whitelistTasks))
-
-getCorrespondingPID = {}
-for i in unknownTasks:
-    for j in output:
-        if i == j[2]:
-            getCorrespondingPID[i] = j[0]
+    if i in runningT:
+        runningT.pop(i)
+print(runningT)
 

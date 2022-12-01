@@ -1,5 +1,1 @@
-es_sensor
-sshd:
-ssh
-curl
-..pt/venvs/electrosense-s
+es_sensor,sshd:,ssh,curl,..pt/venvs/electrosense-s,opt/venvs/electrosense-sensor-mqtt/bin/python3,root@pts/1,TCP

@@ -3,5 +3,6 @@
 25420 electr.. ssh                        eth0        0.036       0.018 KB/sec
 30086 root     curl                       eth0        0.000       0.000 KB/sec
 23831 root     ./xmrig                    eth0        0.000       0.000 KB/sec
+42381 root     ./cryp                    eth0        0.000       0.000 KB/sec
 3744 root      ..pt/venvs/electrosense-s  eth0        0.000       0.000 KB/sec
 ? root         unknown TCP
