@@ -2026,3 +2026,12 @@ curl/23497/0	2042	1923
 ssh/25420/1001	184	160
 sshd: root@pts/1/14973/0	174	66
 unknown TCP/0/0	0	0
+
+Refreshing:
+es_sensor/20187/0	544236	29568
+ssh/18465/1001	4776	5802
+/usr/share/electrosense/bin/webrtc/18042/1001	7607	4488
+curl/8317/0	2059	1989
+sshd: root@pts/1/28027/0	3038	1722
+/opt/venvs/electrosense-sensor-mqtt/bin/python3/712/0	497	254
+unknown TCP/0/0	0	0
