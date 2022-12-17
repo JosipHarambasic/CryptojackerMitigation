@@ -36,7 +36,7 @@ def mitigateCryptojacker():
 
 def startNetworkTracking():
     outputFileName = "nethogs.txt"
-    process = subprocess.Popen("nethogs -t -v 2 > " + outputFileName, shell=True, stdin=subprocess.PIPE)
+    subprocess.Popen("nethogs -t -v 2 > " + outputFileName, shell=True, stdin=subprocess.PIPE)
     time.sleep(60)
     subprocess.Popen("pkill -f nethogs", shell=True, stdin=subprocess.PIPE)
     print("--- output saved in " + outputFileName)
