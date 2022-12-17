@@ -16,14 +16,13 @@ def mitigateCryptojacker():
     if len(maliciousPrograms) > 0:
         for i in maliciousPrograms:
             # cpu limit 'cpulimit -p PID -l 10'
-            print(maliciousPrograms[i])
-            print(i)
             subprocess.Popen("cpulimit -p " + maliciousPrograms[i] + " -l 10 -b", shell=True, stdout=subprocess.PIPE)
             time.sleep(10)
             subprocess.Popen("kill -9 " + maliciousPrograms[i], shell=True, stdin=subprocess.PIPE)
             print("killed process: " + i + " with PID: " + maliciousPrograms[i])
-
-            # subprocess.Popen('kill -9' + str(i), shell=True, stdout=subprocess.PIPE)
+            output = subprocess.Popen("locate " + maliciousPrograms[i], shell=True, stdin=subprocess.PIPE)
+            for j in output.stdout:
+                print(j)
     else:
         print("no sus task found")
 
