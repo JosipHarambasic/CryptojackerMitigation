@@ -1995,6 +1995,7 @@ curl/23497/0	2042	1923
 /opt/venvs/electrosense-sensor-mqtt/bin/python3/3744/0	1986	1016
 ./xmrig/23831/0	385	635
 ssh/25420/1001	184	160
+sspptt/2520/1001	184	160
 sshd: root@pts/1/14973/0	174	66
 unknown TCP/0/0	0	0
 Refreshing:
@@ -2021,6 +2022,7 @@ es_sensor/30861/0	1.13616e+06	60924
 curl/23497/0	2042	1923
 /opt/venvs/electrosense-sensor-mqtt/bin/python3/3744/0	1986	1016
 ./xmrig/23831/0	385	635
+./malwe/231/0	385	635
 ssh/25420/1001	184	160
 sshd: root@pts/1/14973/0	174	66
 unknown TCP/0/0	0	0
