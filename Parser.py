@@ -10,9 +10,12 @@ class Parser:
         for i in whitelistFile:
             whitelistFile = i.split(",")
 
+        countNetworkStamps = 0
         parsedFile = []
         for i in nethogs:
             index = 0
+            if i.startswith("Refreshing:"):
+                countNetworkStamps += 1
             if not i.startswith("Refreshing:"):
                 for j in i:
                     if j.isalpha():
@@ -41,11 +44,21 @@ class Parser:
                     left = check + 1
                     flag = False
                 if counter == 2:
-                    runningT[i[check + 1:][::-1]] = i[left:check][::-1]
+                    runningT[i[left:check][::-1]] = i[check + 1:][::-1]
                     break
                 check += 1
 
-        for i in whitelistFile:
-            if i in runningT:
-                runningT.pop(i)
+
+        maliciousTasks = {}
+        for k,v in runningT.items():
+            if v not in whitelistFile:
+                maliciousTasks[k] = v
+        print(maliciousTasks)
         return runningT
+
+
+# TODO create a output which looks like this {PID: {name:xmrig, sendBytes:X, recvBytes:X}}
+# TODO send and receive can be calculated with the first appearance of the task minus last one
+a = Parser("whitelist.txt", "nethogs.txt").parse()
+for i in a:
+    print(i)

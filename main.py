@@ -17,9 +17,18 @@ def mitigateCryptojacker():
         for i in maliciousPrograms:
             # cpu limit 'cpulimit -p PID -l 10'
             subprocess.Popen("cpulimit -p " + maliciousPrograms[i] + " -l 10 -b", shell=True, stdout=subprocess.PIPE)
+            print("throttling the cpu usage to 10% of a CPU for 10 sec.")
             time.sleep(10)
-            subprocess.Popen("kill -9 " + maliciousPrograms[i], shell=True, stdin=subprocess.PIPE)
-            print("killed process: " + i + " with PID: " + maliciousPrograms[i])
+            try:
+                subprocess.Popen("kill -9 " + i, shell=True, stdin=subprocess.PIPE)
+            except:
+                print("Process: " + i + "already killed")
+            try:
+                subprocess.Popen("pkill " + maliciousPrograms[i], shell=True, stdin=subprocess.PIPE)
+            except:
+                print("Process: " + maliciousPrograms[i] + "already killed")
+
+            print("killed process: " + maliciousPrograms[i] + " with PID: " + maliciousPrograms[i])
             output = subprocess.Popen("locate " + maliciousPrograms[i], shell=True, stdin=subprocess.PIPE)
             for j in output.stdout:
                 print(j)
