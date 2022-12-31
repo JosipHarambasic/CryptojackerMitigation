@@ -24,7 +24,7 @@ def mitigateCryptojacker():
             except:
                 print("Process: " + i + "already killed")
             try:
-                subprocess.Popen("pkill " + maliciousPrograms[i], shell=True, stdin=subprocess.PIPE)
+                subprocess.Popen("pkill -f" + maliciousPrograms[i], shell=True, stdin=subprocess.PIPE)
             except:
                 print("Process: " + maliciousPrograms[i] + "already killed")
 
